@@ -1,0 +1,1 @@
+los enpoits seran los Puntos de conexion desde el backend al frontend y el archivo de conexion de sera el archivo que nos conecte a nustra base de datos

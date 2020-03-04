@@ -1,0 +1,2 @@
+Esta carpeta almacenaremos los archivos de bacend que bos serviran para hacer los CRUD y llamados a la base de datos 
+que necesitaremos de nuestro proyecto 
