@@ -3040,3 +3040,34 @@ input[type="button"].small,
 img.logoH {
     width: 10%!important;
 }
+
+img.logoM {
+    width: 60%!important;
+}
+
+.modal-header span {
+    width: 35%;
+}
+
+.btn-m {
+    width: 9em;
+    padding: 0.2em;
+    font-size: 1em;
+    background-color: #ed2b46;
+    border-color: #ed2b46;
+    color: white;
+    border-radius: 0.3em;
+}
+
+.btn-m:hover {
+    background-color: #9b2837;
+    border-color: #9b2837;
+}
+
+.modal-footer {
+    text-align: center!important;
+}
+
+td.table-m {
+    width: 50%;
+}

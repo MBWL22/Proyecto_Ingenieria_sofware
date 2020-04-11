@@ -11,7 +11,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="../Styles/main.css" />
-    <!-- <link rel="stylesheet" href="../Styles/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="../Styles/bootstrap.min.css">
 </head>
 
 <body class="is-preload">
@@ -89,11 +89,82 @@
             <h3>Observa, aprende y ejecuta</h3>
             <p>E- Transs te ofrece una manera rápida y efectiva con la que puedes adquirir tus boletos.</p>
             <ul class="actions special">
-                <li><a href="#" class="button">Ver vídeo</a></li>
+                <li><a data-toggle="modal" data-target="#exampleModalCenter" href="#" class="button">Ver vídeo</a></li>
             </ul>
         </footer>
 
     </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span> <img class="logoM" src="../Images/logo.png" alt=""></span>
+                    <span><h5 class="modal-title" id="exampleModalCenterTitle">Horario disponible</h5></span>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr><b>
+                                <th scope="col"> <b>Salida</b></th>
+                                <th scope="col"><b>Destino</b></th>
+                                <th scope="col"><b>Hora de Salida</b></th>
+                                <th scope="col"><b>Tarifa</b></th>
+                                </b>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tegucigalpa</td>
+                                <td>SPS</td>
+                                <td>7:00 am</td>
+                                <td>250 lps</td>
+                            </tr>
+                            <tr>
+                                <td>Tegucigalpa</td>
+                                <td>Lago de Yojoa</td>
+                                <td>7:00 am</td>
+                                <td>250 lps</td>
+                            </tr>
+                            <tr>
+                                <td>Tegucigalpa</td>
+                                <td>Choluteca</td>
+                                <td>7:00 am</td>
+                                <td>250 lps</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <table class="table table-borderless">
+                        <tr>
+                            <td class="table-m"><button type="button" class=" btn-m" data-dismiss="modal">Cerrar</button></td>
+                            <td class="table-m"><button type="button " class=" btn-m ">Comprar Boleto</button></td>
+                        </tr>
+                    </table>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
 
     <!-- Footer -->
     <div id="footer">
@@ -145,6 +216,7 @@
     <script src="../Controladores/breakpoints.min.js"></script>
     <script src="../Controladores/util.js"></script>
     <script src="../Controladores/main.js"></script>
+    <script src="../Controladores/bootstrap.min.js"></script>
 
 </body>
 
