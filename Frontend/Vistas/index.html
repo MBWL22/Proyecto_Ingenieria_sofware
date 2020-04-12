@@ -58,7 +58,7 @@
                             <article class="detalle-ciudad">Partiendo de la ciudad de <br> Tegucigalpa</article>
 
                             <div class="contenedor-btn-salida">
-                                <button class="btn-ver-salidas" data-toggle="modal" data-target="#exampleModalCenter">Ver todas las salidas</button>
+                                <button class="btn-ver-salidas" data-toggle="modal" data-target="#modalTGU">Ver todas las salidas</button>
                             </div>
                         </div>
                     </div>
@@ -70,7 +70,7 @@
                             </div>
                             <article class="detalle-ciudad">Partiendo de la ciudad de <br> San Pedro Sula</article>
                             <div class="contenedor-btn-salida">
-                                <button class="btn-ver-salidas" data-toggle="modal" data-target="#exampleModal">Ver todas las salidas</button>
+                                <button class="btn-ver-salidas" data-toggle="modal" data-target="#modalSPS">Ver todas las salidas</button>
                             </div>
                         </div>
                     </div>
@@ -82,7 +82,7 @@
                             </div>
                             <article class="detalle-ciudad">Partiendo de la ciudad de <br> La Ceiba</article>
                             <div class="contenedor-btn-salida">
-                                <button class="btn-ver-salidas" data-toggle="modal" data-target="#exampleModal">Ver todas las salidas</button>
+                                <button class="btn-ver-salidas" data-toggle="modal" data-target="#modalCE">Ver todas las salidas</button>
                             </div>
                         </div>
                     </div>
@@ -94,7 +94,7 @@
                             </div>
                             <article class="detalle-ciudad">Partiendo de la ciudad de <br> Santa Rosa de Copán</article>
                             <div class="contenedor-btn-salida">
-                                <button class="btn-ver-salidas" data-toggle="modal" data-target="#exampleModal">Ver todas las salidas</button>
+                                <button class="btn-ver-salidas" data-toggle="modal" data-target="#modalSRC">Ver todas las salidas</button>
                             </div>
                         </div>
                     </div>
@@ -106,7 +106,7 @@
                             </div>
                             <article class="detalle-ciudad">Partiendo de la ciudad de <br> Catacamas</article>
                             <div class="contenedor-btn-salida">
-                                <button class="btn-ver-salidas" data-toggle="modal" data-target="#exampleModal">Ver todas las salidas</button>
+                                <button class="btn-ver-salidas" data-toggle="modal" data-target="#modalCAT">Ver todas las salidas</button>
                             </div>
                         </div>
                     </div>
@@ -118,7 +118,7 @@
                             </div>
                             <article class="detalle-ciudad">Partiendo de la ciudad de <br> Choluteca</article>
                             <div class="contenedor-btn-salida">
-                                <button class="btn-ver-salidas" data-toggle="modal" data-target="#exampleModal">Ver todas las salidas</button>
+                                <button class="btn-ver-salidas" data-toggle="modal" data-target="#modalCHO">Ver todas las salidas</button>
                             </div>
                         </div>
                     </div>
@@ -130,7 +130,7 @@
                             </div>
                             <article class="detalle-ciudad">Partiendo del <br> Lago de Yojoa</article>
                             <div class="contenedor-btn-salida">
-                                <button class="btn-ver-salidas" data-toggle="modal" data-target="#exampleModal">Ver todas las salidas</button>
+                                <button class="btn-ver-salidas" data-toggle="modal" data-target="#modalLY">Ver todas las salidas</button>
                             </div>
                         </div>
                     </div>
@@ -142,7 +142,7 @@
                             </div>
                             <article class="detalle-ciudad">Partiendo de la ciudad de <br> Trujillo</article>
                             <div class="contenedor-btn-salida">
-                                <button class="btn-ver-salidas" data-toggle="modal" data-target="#exampleModal">Ver todas las salidas</button>
+                                <button class="btn-ver-salidas" data-toggle="modal" data-target="#modalTRU">Ver todas las salidas</button>
                             </div>
                         </div>
                     </div>
@@ -154,7 +154,7 @@
                             </div>
                             <article class="detalle-ciudad">Partiendo de la ciudad de <br> Danlí</article>
                             <div class="contenedor-btn-salida">
-                                <button class="btn-ver-salidas" data-toggle="modal" data-target="#exampleModal">Ver todas las salidas</button>
+                                <button class="btn-ver-salidas" data-toggle="modal" data-target="#modalDAN">Ver todas las salidas</button>
                             </div>
                         </div>
                     </div>
@@ -177,7 +177,7 @@
 
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal fade" id="modalTGU" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -237,14 +237,484 @@
     </div>
 
 
+    <div class="modal fade" id="modalSPS" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span> <img class="logoM" src="../Images/logo.png" alt=""></span>
+                    <span><h5 class="modal-title" id="exampleModalCenterTitle">Horario disponible</h5></span>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr><b>
+                                <th scope="col"> <b>Salida</b></th>
+                                <th scope="col"><b>Destino</b></th>
+                                <th scope="col"><b>Hora de Salida</b></th>
+                                <th scope="col"><b>Tarifa</b></th>
+                                </b>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tegucigalpa</td>
+                                <td>SPS</td>
+                                <td>7:00 am</td>
+                                <td>250 lps</td>
+                            </tr>
+                            <tr>
+                                <td>Tegucigalpa</td>
+                                <td>Lago de Yojoa</td>
+                                <td>7:00 am</td>
+                                <td>250 lps</td>
+                            </tr>
+                            <tr>
+                                <td>Tegucigalpa</td>
+                                <td>Choluteca</td>
+                                <td>7:00 am</td>
+                                <td>250 lps</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <table class="table table-borderless">
+                        <tr>
+                            <td class="table-m"><button type="button" class=" btn-m" data-dismiss="modal">Cerrar</button></td>
+                            <td class="table-m"><button type="button " class=" btn-m ">Comprar Boleto</button></td>
+                        </tr>
+                    </table>
 
 
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
 
 
+    <div class="modal fade" id="modalCE" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span> <img class="logoM" src="../Images/logo.png" alt=""></span>
+                    <span><h5 class="modal-title" id="exampleModalCenterTitle">Horario disponible</h5></span>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr><b>
+                                <th scope="col"> <b>Salida</b></th>
+                                <th scope="col"><b>Destino</b></th>
+                                <th scope="col"><b>Hora de Salida</b></th>
+                                <th scope="col"><b>Tarifa</b></th>
+                                </b>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tegucigalpa</td>
+                                <td>SPS</td>
+                                <td>7:00 am</td>
+                                <td>250 lps</td>
+                            </tr>
+                            <tr>
+                                <td>Tegucigalpa</td>
+                                <td>Lago de Yojoa</td>
+                                <td>7:00 am</td>
+                                <td>250 lps</td>
+                            </tr>
+                            <tr>
+                                <td>Tegucigalpa</td>
+                                <td>Choluteca</td>
+                                <td>7:00 am</td>
+                                <td>250 lps</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <table class="table table-borderless">
+                        <tr>
+                            <td class="table-m"><button type="button" class=" btn-m" data-dismiss="modal">Cerrar</button></td>
+                            <td class="table-m"><button type="button " class=" btn-m ">Comprar Boleto</button></td>
+                        </tr>
+                    </table>
 
 
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
 
 
+    <div class="modal fade" id="modalSRC" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span> <img class="logoM" src="../Images/logo.png" alt=""></span>
+                    <span><h5 class="modal-title" id="exampleModalCenterTitle">Horario disponible</h5></span>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr><b>
+                                <th scope="col"> <b>Salida</b></th>
+                                <th scope="col"><b>Destino</b></th>
+                                <th scope="col"><b>Hora de Salida</b></th>
+                                <th scope="col"><b>Tarifa</b></th>
+                                </b>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tegucigalpa</td>
+                                <td>SPS</td>
+                                <td>7:00 am</td>
+                                <td>250 lps</td>
+                            </tr>
+                            <tr>
+                                <td>Tegucigalpa</td>
+                                <td>Lago de Yojoa</td>
+                                <td>7:00 am</td>
+                                <td>250 lps</td>
+                            </tr>
+                            <tr>
+                                <td>Tegucigalpa</td>
+                                <td>Choluteca</td>
+                                <td>7:00 am</td>
+                                <td>250 lps</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <table class="table table-borderless">
+                        <tr>
+                            <td class="table-m"><button type="button" class=" btn-m" data-dismiss="modal">Cerrar</button></td>
+                            <td class="table-m"><button type="button " class=" btn-m ">Comprar Boleto</button></td>
+                        </tr>
+                    </table>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="modal fade" id="modalCAT" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span> <img class="logoM" src="../Images/logo.png" alt=""></span>
+                    <span><h5 class="modal-title" id="exampleModalCenterTitle">Horario disponible</h5></span>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr><b>
+                                <th scope="col"> <b>Salida</b></th>
+                                <th scope="col"><b>Destino</b></th>
+                                <th scope="col"><b>Hora de Salida</b></th>
+                                <th scope="col"><b>Tarifa</b></th>
+                                </b>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tegucigalpa</td>
+                                <td>SPS</td>
+                                <td>7:00 am</td>
+                                <td>250 lps</td>
+                            </tr>
+                            <tr>
+                                <td>Tegucigalpa</td>
+                                <td>Lago de Yojoa</td>
+                                <td>7:00 am</td>
+                                <td>250 lps</td>
+                            </tr>
+                            <tr>
+                                <td>Tegucigalpa</td>
+                                <td>Choluteca</td>
+                                <td>7:00 am</td>
+                                <td>250 lps</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <table class="table table-borderless">
+                        <tr>
+                            <td class="table-m"><button type="button" class=" btn-m" data-dismiss="modal">Cerrar</button></td>
+                            <td class="table-m"><button type="button " class=" btn-m ">Comprar Boleto</button></td>
+                        </tr>
+                    </table>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="modal fade" id="modalCHO" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span> <img class="logoM" src="../Images/logo.png" alt=""></span>
+                    <span><h5 class="modal-title" id="exampleModalCenterTitle">Horario disponible</h5></span>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr><b>
+                                <th scope="col"> <b>Salida</b></th>
+                                <th scope="col"><b>Destino</b></th>
+                                <th scope="col"><b>Hora de Salida</b></th>
+                                <th scope="col"><b>Tarifa</b></th>
+                                </b>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tegucigalpa</td>
+                                <td>SPS</td>
+                                <td>7:00 am</td>
+                                <td>250 lps</td>
+                            </tr>
+                            <tr>
+                                <td>Tegucigalpa</td>
+                                <td>Lago de Yojoa</td>
+                                <td>7:00 am</td>
+                                <td>250 lps</td>
+                            </tr>
+                            <tr>
+                                <td>Tegucigalpa</td>
+                                <td>Choluteca</td>
+                                <td>7:00 am</td>
+                                <td>250 lps</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <table class="table table-borderless">
+                        <tr>
+                            <td class="table-m"><button type="button" class=" btn-m" data-dismiss="modal">Cerrar</button></td>
+                            <td class="table-m"><button type="button " class=" btn-m ">Comprar Boleto</button></td>
+                        </tr>
+                    </table>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="modal fade" id="modalLY" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span> <img class="logoM" src="../Images/logo.png" alt=""></span>
+                    <span><h5 class="modal-title" id="exampleModalCenterTitle">Horario disponible</h5></span>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr><b>
+                                <th scope="col"> <b>Salida</b></th>
+                                <th scope="col"><b>Destino</b></th>
+                                <th scope="col"><b>Hora de Salida</b></th>
+                                <th scope="col"><b>Tarifa</b></th>
+                                </b>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tegucigalpa</td>
+                                <td>SPS</td>
+                                <td>7:00 am</td>
+                                <td>250 lps</td>
+                            </tr>
+                            <tr>
+                                <td>Tegucigalpa</td>
+                                <td>Lago de Yojoa</td>
+                                <td>7:00 am</td>
+                                <td>250 lps</td>
+                            </tr>
+                            <tr>
+                                <td>Tegucigalpa</td>
+                                <td>Choluteca</td>
+                                <td>7:00 am</td>
+                                <td>250 lps</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <table class="table table-borderless">
+                        <tr>
+                            <td class="table-m"><button type="button" class=" btn-m" data-dismiss="modal">Cerrar</button></td>
+                            <td class="table-m"><button type="button " class=" btn-m ">Comprar Boleto</button></td>
+                        </tr>
+                    </table>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="modal fade" id="modalTRU" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span> <img class="logoM" src="../Images/logo.png" alt=""></span>
+                    <span><h5 class="modal-title" id="exampleModalCenterTitle">Horario disponible</h5></span>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr><b>
+                                <th scope="col"> <b>Salida</b></th>
+                                <th scope="col"><b>Destino</b></th>
+                                <th scope="col"><b>Hora de Salida</b></th>
+                                <th scope="col"><b>Tarifa</b></th>
+                                </b>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tegucigalpa</td>
+                                <td>SPS</td>
+                                <td>7:00 am</td>
+                                <td>250 lps</td>
+                            </tr>
+                            <tr>
+                                <td>Tegucigalpa</td>
+                                <td>Lago de Yojoa</td>
+                                <td>7:00 am</td>
+                                <td>250 lps</td>
+                            </tr>
+                            <tr>
+                                <td>Tegucigalpa</td>
+                                <td>Choluteca</td>
+                                <td>7:00 am</td>
+                                <td>250 lps</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <table class="table table-borderless">
+                        <tr>
+                            <td class="table-m"><button type="button" class=" btn-m" data-dismiss="modal">Cerrar</button></td>
+                            <td class="table-m"><button type="button " class=" btn-m ">Comprar Boleto</button></td>
+                        </tr>
+                    </table>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="modal fade" id="modalDAN" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span> <img class="logoM" src="../Images/logo.png" alt=""></span>
+                    <span><h5 class="modal-title" id="exampleModalCenterTitle">Horario disponible</h5></span>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr><b>
+                                <th scope="col"> <b>Salida</b></th>
+                                <th scope="col"><b>Destino</b></th>
+                                <th scope="col"><b>Hora de Salida</b></th>
+                                <th scope="col"><b>Tarifa</b></th>
+                                </b>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tegucigalpa</td>
+                                <td>SPS</td>
+                                <td>7:00 am</td>
+                                <td>250 lps</td>
+                            </tr>
+                            <tr>
+                                <td>Tegucigalpa</td>
+                                <td>Lago de Yojoa</td>
+                                <td>7:00 am</td>
+                                <td>250 lps</td>
+                            </tr>
+                            <tr>
+                                <td>Tegucigalpa</td>
+                                <td>Choluteca</td>
+                                <td>7:00 am</td>
+                                <td>250 lps</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <table class="table table-borderless">
+                        <tr>
+                            <td class="table-m"><button type="button" class=" btn-m" data-dismiss="modal">Cerrar</button></td>
+                            <td class="table-m"><button type="button " class=" btn-m ">Comprar Boleto</button></td>
+                        </tr>
+                    </table>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
 
     <!-- Footer -->
     <div id="footer">
