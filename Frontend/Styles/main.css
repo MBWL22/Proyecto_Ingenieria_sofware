@@ -142,6 +142,62 @@ section {
 #btn-enviar:hover {
     color: white !important;
 }
+.ciudad{
+    width: 100%;
+    height: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+    border-radius: 20px;
+    background-color: white;
+    -webkit-box-shadow: 6px -5px 5px 0px rgba(44,46,61,1);
+    -moz-box-shadow: 6px -5px 5px 0px rgba(44,46,61,1);
+    box-shadow: 6px -5px 5px 0px rgba(44,46,61,1);
+    
+    
+    
+}
+.titulo{
+    font-family: 'Noticia Text', serif;
+    font-size: 120%;
+    color: #2c2e3d;
+    text-align: center;
+    padding-top: 15%;
+    padding-bottom: 5%;
+    font-weight: 600;
+    
+}
+.detalle-ciudad{
+    color: #2c2e3d;
+    padding-bottom: 3%;
+    text-align: center;
+}
+.contenedor-btn-salida{
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 15%;
+}
+.btn-ver-salidas{
+    padding: 4% 6% 4% 6%;
+    border-radius:10px;
+    background-color: #ed2b46;
+    border-color: #ed2b46;
+    border-width: 3px;
+    color: white;
+    width: 100%;
+    font-size: 20px;
+}
+.btn-ver-salidas:hover{
+    background-color: #9b2837;
+    border-color: #9b2837;
+}
+.contenedor-icono{
+    text-align: center;
+}
+.bus-ciudad{
+    color: #2c2e3d;
+    font-size: 35px;
+    
+}
 
 body {
     line-height: 1;
