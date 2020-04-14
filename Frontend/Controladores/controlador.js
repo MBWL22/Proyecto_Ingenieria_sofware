@@ -81,13 +81,13 @@ function boleteria(){
     for(let i=1;i<=numAsientos;i++){
         if(ocupados.lastIndexOf(i)==-1){
             if(seleccionados.lastIndexOf(i)==-1){
-                src= "img/libre.png";
+                src= "../Images/libre.png";
             }else{
-                src = "img/seleccionado.png"
+                src = "../Images/seleccionado.png"
             }
             genAsientos += `<div class="col-2"><img width="50px" id= "img${i}" onclick="cambiarAsiento(${i})" src=${src}></div>`;
         }else{
-            genAsientos += `<div class="col-2"><img width="50px" src="img/ocupado.png"></div>`;
+            genAsientos += `<div class="col-2"><img width="50px" src="../Images/ocupado.png"></div>`;
         }
         if(i%2==0){
             if(i%4==0){
@@ -127,14 +127,14 @@ function atrasAsientos(){
 
 function cambiarAsiento(indice){
     let asiento = document.getElementById(`img${indice}`);
-    if(asiento.getAttribute("src")=="img/libre.png"){
+    if(asiento.getAttribute("src")=="../Images/libre.png"){
         if(numBoleto>0){
-            asiento.src ="img/seleccionado.png";
+            asiento.src ="../Images/seleccionado.png";
             numBoleto -= 1;
             seleccionados.push(indice);
         }
     }else{
-        asiento.src = "img/libre.png";
+        asiento.src = "../Images/libre.png";
         numBoleto +=1;
         seleccionados.splice(seleccionados.lastIndexOf(indice),1);
     }
